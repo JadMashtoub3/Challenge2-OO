@@ -78,7 +78,7 @@ namespace CivSem1Challenge2_RegistrationSystem
 
                 case "4":
                     //TODO: Print the amount of students in the system
-                    System.Console.WriteLine(this.GetNumStudents());
+                    System.Console.WriteLine("there are " + this.GetNumStudents() + " students currently in the system");
                     // Create and call a method/function named GetNumStudents() to do this.
                     break;
 
@@ -90,6 +90,7 @@ namespace CivSem1Challenge2_RegistrationSystem
                 case "6":
                    //TODO: Add a student to the student List. Then add that student to a valid course
                    this.AddStudent();
+                   Console.WriteLine(this.Students);
                    break;
 
                 case "7":
@@ -195,7 +196,7 @@ namespace CivSem1Challenge2_RegistrationSystem
             int dob;
             int sno;
             int fyor;
-
+            int courseno;
         
 
             System.Console.Write("Please enter student's first name: ");
@@ -228,7 +229,7 @@ namespace CivSem1Challenge2_RegistrationSystem
                 System.Console.WriteLine("Invalid, enter again");
                 
             }
-
+        
             //TODO: add student to the this.StudentList
                 Student newStudent = new Student(fname, sname, yob, mob, dob, sno, fyor);
                 this.Students.Add(newStudent); 
@@ -244,5 +245,5 @@ namespace CivSem1Challenge2_RegistrationSystem
 
         //TODO: Create the GetUnerolledStudents method/function here
 
+       }
     }
-}
