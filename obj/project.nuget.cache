@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z/M22/LQir7TKtBrlzs0SGlLUV4j4Z9xeJHnViYxFVaHbeWNiDgkcDQ8QYE3qhCsboq7Zd8BgT3odpbnyB+PPg==",
+  "dgSpecHash": "W1e64kumvIkuiIxV38arw2cbCg/rjpCxoE086Hu7jEeLQGPOHkuZVq/D7M/A7+GM4u6qyzjdUE62ZEXPrCzpFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\CivSem1Challenge2-RegistrationSystem\\CivSem1Challenge2-RegistrationSystem.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Challenge2-OO\\CivSem1Challenge2-RegistrationSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512"
   ],

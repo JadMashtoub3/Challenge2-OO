@@ -4,6 +4,7 @@ using System.Linq;
 using CivSem1Challenge2_RegistrationSystem.helpers;
 using CivSem1Challenge2_RegistrationSystem.models;
 
+
 namespace CivSem1Challenge2_RegistrationSystem
 {
     public class UI
@@ -83,7 +84,7 @@ namespace CivSem1Challenge2_RegistrationSystem
 
                 case "5":
                     //TODO: Print the number of students enrolled in valid courses
-                    
+                    System.Console.WriteLine(this.getEnrolledStudents());
                     break;
 
                 case "6":
@@ -105,7 +106,7 @@ namespace CivSem1Challenge2_RegistrationSystem
                     }
 
                     //TODO: print the students who first registered in year num and are doing course courseNum
-
+                        
                     break;
 
                 case "8":
@@ -137,7 +138,16 @@ namespace CivSem1Challenge2_RegistrationSystem
 
             
         }
-
+          private string getEnrolledStudents(){
+            string EnrolledStuents="EnrolledStudents:";
+            foreach (Course item in this.Courses)
+            {
+                EnrolledStuents+=$"\nCourse {item.CourseNo}, Students:{item.Enrolments.Count}";
+            }
+            return
+             EnrolledStuents;
+             System.Console.WriteLine();
+        }
 
         //TODO: create the GetNumStudents method/function here
            private int GetNumStudents() {
@@ -147,17 +157,30 @@ namespace CivSem1Challenge2_RegistrationSystem
             }
 
         //---------------------
-
+        
         private string GetStudentName(int num)
         {
+            foreach (Student item in this.Students)
+            {
+                if(item.StudentNo==num){
+                    return item.GetFullName();
+                }
+            }
+            return null;
+        
             //TODO: write code find the relevant student in Students and return the student's first name and surname
             // if num doesn't exist in Students, return null;
             // should use the method GetFullName() from Student/Person to get the name
-            return null;
         }
 
         private int CourseGetNumStudents(int num)
         {
+            foreach(Course item in this.Courses)
+        {
+            if(item.CourseNo==num) {
+                return item.Enrolments.Count;
+            }
+        }
             //TODO: write code find the relevant courseNo in Courses and return the number of students/enrolments
             // if num doesn't exist in Courses, return -1
             return -1;
@@ -173,7 +196,7 @@ namespace CivSem1Challenge2_RegistrationSystem
             int sno;
             int fyor;
 
-            int courseno;
+        
 
             System.Console.Write("Please enter student's first name: ");
             fname = Console.ReadLine();
@@ -203,13 +226,16 @@ namespace CivSem1Challenge2_RegistrationSystem
             System.Console.Write("Please enter student's first year of registration: ");
             while(!int.TryParse(Console.ReadLine(), out fyor)) {
                 System.Console.WriteLine("Invalid, enter again");
+                
             }
 
             //TODO: add student to the this.StudentList
-
-            System.Console.Write("Enter course number to add the student to: ");
-            //TODO: add the student to the desired course in this.Courses.  
+                Student newStudent = new Student(fname, sname, yob, mob, dob, sno, fyor);
+                this.Students.Add(newStudent); 
+                //TODO: add the student to the desired course in this.Courses.  
             //      If the course doesn't exist let the user know and go back to the main menu.
+            System.Console.Write("Enter course number to add the student to: ");
+           
             // -----------------------
             // (optional - CREDIT TASK)  If the course doesn't exist keep asking until a valid course is entered.
             //                           User may enter 0000 for no course to be enrolled into

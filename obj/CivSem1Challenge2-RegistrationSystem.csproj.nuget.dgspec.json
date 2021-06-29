@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\CivSem1Challenge2-RegistrationSystem\\CivSem1Challenge2-RegistrationSystem.csproj": {}
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\Challenge2-OO\\CivSem1Challenge2-RegistrationSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\CivSem1Challenge2-RegistrationSystem\\CivSem1Challenge2-RegistrationSystem.csproj": {
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\Challenge2-OO\\CivSem1Challenge2-RegistrationSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\CivSem1Challenge2-RegistrationSystem\\CivSem1Challenge2-RegistrationSystem.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Challenge2-OO\\CivSem1Challenge2-RegistrationSystem.csproj",
         "projectName": "CivSem1Challenge2-RegistrationSystem",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\CivSem1Challenge2-RegistrationSystem\\CivSem1Challenge2-RegistrationSystem.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Challenge2-OO\\CivSem1Challenge2-RegistrationSystem.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\CivSem1Challenge2-RegistrationSystem\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Challenge2-OO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
